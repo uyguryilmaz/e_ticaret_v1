@@ -68,7 +68,7 @@ const Topbar = () => {
 
   return (
     <div className="shadow">
-        <div className=" flex  max-w-[1400px] mx-auto justify-center md:justify-between items-center px-3 ">
+        <div className=" flex  max-w-[1400px] container mx-auto justify-center md:justify-between items-center px-3 ">
           <div className="md:flex hidden justify-start items-center gap-5 text-sm ">
             <a href="">Hesap</a>
             <a href="">Sipariş takip</a>
