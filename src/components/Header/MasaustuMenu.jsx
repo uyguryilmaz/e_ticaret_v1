@@ -135,7 +135,7 @@ const MasaustuMenu = () => {
                   initial={{ y: "-10%", opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: -20, opacity: 0 }}
-                  className="absolute right-full  -left-24  w-[180px] border border-gray-200 pt-3 mt-2 p-2 border-t-4 border-t-[#fdb2bb] flex flex-col bg-white"
+                  className="absolute right-full  -left-24  w-[180px] border border-gray-200 pt-3 mt-2 p-2 border-t-4 border-t-[#fdb2bb] flex flex-col bg-white z-20"
                 >
                   <ProfileItem yazi={"Bilgilerim"} icon={"profile"} />
                   <ProfileItem yazi={"Tüm Siparişlerim"} icon={"orders"} />
@@ -164,7 +164,7 @@ const MasaustuMenu = () => {
                     initial={{ y: "-10%", opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: -20, opacity: 0 }}
-                    className="absolute right-full  -left-40  w-[250px] border border-gray-200 pt-3 mt-2 p-2 border-t-4 border-t-[#fdb2bb] flex flex-col bg-white"
+                    className="absolute right-full  -left-40  w-[250px] border border-gray-200 pt-3 mt-2 p-2 border-t-4 border-t-[#fdb2bb] flex flex-col bg-white z-20"
                   >
                     <FavoriItem />
                     <FavoriItem />
@@ -193,7 +193,7 @@ const MasaustuMenu = () => {
                   initial={{ y: "-10%", opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: -20, opacity: 0 }}
-                  className="absolute right-0 top-full mt-2 z-50 w-[250px] bg-white border border-gray-200 p-2 border-t-4 border-t-[#fdb2bb] flex flex-col shadow-lg"
+                  className="absolute right-0 top-full mt-2 z-50 w-[250px] bg-white border border-gray-200 p-2 border-t-4 border-t-[#fdb2bb] flex flex-col shadow-lg z-20"
                 >
                   <FavoriItem />
                   <FavoriItem />
@@ -220,7 +220,7 @@ const MasaustuMenu = () => {
               onClick={kategoriAc}
               className=" relative  flex bg-white items-center px-10 py-4 rounded-t-2xl"
             >
-              <img src="/img/category.png" className="mr-2"></img>
+              <img  src="/img/category.png" className="mr-2 size-5"></img>
             Tüm Kategoriler
               <img
                 src="/img/arrow-down.png"
@@ -233,7 +233,7 @@ const MasaustuMenu = () => {
                     initial={{ y: "-10%", opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: -20, opacity: 0 }}
-                    className="absolute border border-gray-200 bg-white p-3 top-full left-0 w-full "
+                    className="z-20 absolute border border-gray-200 bg-white p-3 top-full left-0 w-full "
                   >
                     <MenuItem icon={"dress"} yazi="Elbise" />
                     <MenuItem icon={"tshirt"} yazi="tişört" />
