@@ -24,3 +24,24 @@ body {
 .myBannerItem:hover .myBannerImg{
   transform: translateY(-15px);
 }
+
+.myProductItem:hover .myProductItemBox{
+  display:flex ;
+}
+
+.oyna{
+  animation: oynaAnim 1s ease-in-out infinite;
+}
+
+
+@keyframes oynaAnim{
+  0%{
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
