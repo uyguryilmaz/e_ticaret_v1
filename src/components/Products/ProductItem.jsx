@@ -8,7 +8,7 @@ const ProductItem = () => {
     <div
       onMouseEnter={() => setHoverOlduMu(true)}
       onMouseLeave={() => setHoverOlduMu(false)}
-      className="flex flex-col items-center justify-center mt-5 border border-gray-300 p-3 relative myProductItem max-w-[290px]"
+      className="flex flex-col items-center justify-center mt-5 border border-gray-300 p-3 relative myProductItem max-w-[330px]"
     >
       <img className="w-full" src="/img/product1.jpg" alt="" />
       <h3 className="mt-2 text-xl font-semibold">Ürün Başlığı</h3>
