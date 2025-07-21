@@ -1,8 +1,9 @@
 import { AnimatePresence, motion } from "framer-motion";
 
+
 import React, { useState } from "react";
 
-const ProductItem = () => {
+const ProductItem = ({resim, baslik, eskiFiyat, yeniFiyat }) => {
   const [hoverOlduMu, setHoverOlduMu] = useState(false);
   return (
     <div
@@ -10,11 +11,11 @@ const ProductItem = () => {
       onMouseLeave={() => setHoverOlduMu(false)}
       className="flex flex-col items-center justify-center mt-5 border border-gray-300 p-3 relative myProductItem max-w-[330px]"
     >
-      <img className="w-full" src="/img/product1.jpg" alt="" />
-      <h3 className="mt-2 text-xl font-semibold">Ürün Başlığı</h3>
+      <img className="w-full" src={`/img/${resim}`} alt="" />
+      <h3 className="mt-2 text-xl font-semibold">{baslik}</h3>
       <div className="flex items-center gap-2">
-        <span className="line-through">150TL</span>
-        <span className="font-semibold text-red-400">100TL</span>
+        <span className="line-through">{eskiFiyat}</span>
+        <span className="font-semibold text-red-400">{yeniFiyat}</span>
       </div>
 
       <AnimatePresence>
