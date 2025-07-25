@@ -1,5 +1,6 @@
 import Banners from "./components/Banners/Banners";
 import Brands from "./components/Brands/Brands";
+import Discount from "./components/Discount/Discount";
 import Header from "./components/Header/Header";
 import NewProducts from "./components/Products/NewProducts";
 import TrendProducts from "./components/Products/TrendProducts";
@@ -15,6 +16,7 @@ function App() {
       <TrendProducts/>
       <Brands/>
       <NewProducts/>
+      <Discount/>
     </>
   );
   
